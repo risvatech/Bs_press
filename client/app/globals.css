@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        /* Industrial Blue - Primary Brand Color */
+        --primary: 213 50% 25%;
+        --primary-foreground: 0 0% 100%;
+
+        /* Steel Gray - Secondary */
+        --secondary: 215 14% 34%;
+        --secondary-foreground: 0 0% 100%;
+
+        /* Background & Surface Colors */
+        --background: 210 20% 98%;
+        --foreground: 215 25% 15%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 215 25% 15%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 215 25% 15%;
+
+        /* Muted Colors */
+        --muted: 210 15% 93%;
+        --muted-foreground: 215 16% 47%;
+
+        /* Accent - Warm Orange/Amber */
+        --accent: 50 95% 53%;
+        --accent-foreground: 0 0% 100%;
+
+        /* Teal - Secondary Accent */
+        --teal: 175 70% 35%;
+        --teal-foreground: 0 0% 100%;
+
+        /* Wood Tone */
+        --wood: 30 51% 35%;
+        --wood-foreground: 0 0% 100%;
+
+        /* Steel Accent */
+        --steel: 215 14% 45%;
+        --steel-foreground: 0 0% 100%;
+
+        /* Destructive */
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+
+        /* Borders & Inputs */
+        --border: 214 20% 85%;
+        --input: 214 20% 85%;
+        --ring: 213 50% 25%;
+
+        --radius: 0.5rem;
+
+        --charcoal: 240 10% 12%;
+        --charcoal-light: 240 8% 20%;
+        --navy: 213 50% 12%;
+        --navy-light: 213 40% 20%;
+        --steel: 214 20% 60%;
+        --steel-light: 214 20% 80%;
+        --copper: 28 80% 40%;
+        --copper-light: 28 60% 55%;
+        --industrial-orange: 21 90% 48%;
+        --industrial-yellow: 45 80% 45%;
+        --burgundy: 0 60% 30%;
+        --slate: 215 25% 27%;
+        --graphite: 217 19% 27%;
+
+        /* Gradients */
+        --gradient-hero: linear-gradient(135deg, hsl(213 50% 20% / 0.92) 0%, hsl(175 60% 25% / 0.85) 100%);
+        --gradient-cta: linear-gradient(135deg, hsl(213 50% 25%) 0%, hsl(25 90% 45%) 100%);
+        --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 97%) 100%);
+        --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 100% 55%) 100%);
+        --gradient-teal: linear-gradient(135deg, hsl(175 70% 35%) 0%, hsl(185 65% 40%) 100%);
+
+        /* Shadows */
+        --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+        --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -2px hsl(215 25% 15% / 0.1);
+        --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -4px hsl(215 25% 15% / 0.1);
+        --shadow-xl: 0 20px 25px -5px hsl(215 25% 15% / 0.1), 0 8px 10px -6px hsl(215 25% 15% / 0.1);
+
+        /* Sidebar */
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    .dark {
+        --background: 215 25% 10%;
+        --foreground: 210 20% 95%;
+
+        --card: 215 25% 13%;
+        --card-foreground: 210 20% 95%;
+
+        --popover: 215 25% 13%;
+        --popover-foreground: 210 20% 95%;
+
+        --primary: 213 45% 50%;
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 215 20% 25%;
+        --secondary-foreground: 210 20% 95%;
+
+        --muted: 215 20% 20%;
+        --muted-foreground: 215 15% 60%;
+
+        --accent: 30 45% 45%;
+        --accent-foreground: 0 0% 100%;
+
+        --destructive: 0 62% 30%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 215 20% 22%;
+        --input: 215 20% 22%;
+        --ring: 213 45% 50%;
+
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 224.3 76.3% 48%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground font-sans antialiased;
+        font-family: 'merriweather', system-ui, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'merriweather', system-ui, sans-serif;
+        @apply font-bold tracking-tight;
+    }
+}
+
+@layer components {
+    .container-section {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .section-padding {
+        @apply py-16 md:py-24;
+    }
+
+    .text-gradient-primary {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+    }
+
+    .card-industrial {
+        @apply bg-card rounded-lg shadow-md border border-border/50 transition-all duration-300 hover:shadow-lg;
+    }
+
+    .btn-industrial {
+        @apply inline-flex items-center justify-center px-6 py-3 font-semibold rounded-md transition-all duration-200;
+    }
+}
+
+@layer utilities {
+    .animate-fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    .animate-slide-up {
+        animation: slideUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
