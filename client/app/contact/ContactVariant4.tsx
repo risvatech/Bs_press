@@ -42,7 +42,7 @@ const ContactVariant4 = () => {
             name: "Hosur",
             city: "Hosur",
             address: "No.23, 3rd Cross, Sidco Industrial Complex Hosur- 635 126",
-            phone: "+91 7598062530",
+            phone: "+91 70103 92770",
             email: "bspressproductshosur@gmail.com",
             embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.393615530453!2d77.82893927594961!3d12.752930587542693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae710020190bcf%3A0x43fccc4c6efb9f34!2sB%20s%20press%20products!5e0!3m2!1sen!2sin!4v1769407650494!5m2!1sen!2sin"
         },
@@ -137,7 +137,7 @@ const ContactVariant4 = () => {
                         <div className="flex flex-wrap justify-center gap-4">
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
                                 <Phone className="w-5 h-5 text-accent" />
-                                <span className="text-white font-medium">+91 7598062530</span>
+                                <span className="text-white font-medium">+91 70103 92770</span>
                             </div>
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg">
                                 <Mail className="w-5 h-5 text-accent" />
@@ -349,7 +349,7 @@ const ContactVariant4 = () => {
                                     </div>
                                     <h4 className="font-bold text-foreground mb-2">Call Us</h4>
                                     <p className="text-muted-foreground">Mon-Fri: 9AM-6PM</p>
-                                    <p className="text-primary font-semibold">+91 7598062530</p>
+                                    <p className="text-primary font-semibold">+91 70103 92770</p>
                                 </div>
 
                                 <div className="bg-card p-6 rounded-lg border border-border">

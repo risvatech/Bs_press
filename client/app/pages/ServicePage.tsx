@@ -170,13 +170,13 @@ export default function ServicesPage() {
                             <TabsList className="inline-flex mx-auto bg-muted p-1 rounded-lg">
                                 <TabsTrigger
                                     value="facilities"
-                                    className="data-[state=active]:bg-accent data-[state=active]:text-white"
+                                    className="data-[state=active]:bg-primary data-[state=active]:text-white"
                                 >
                                     Production Facilities
                                 </TabsTrigger>
                                 <TabsTrigger
                                     value="quality"
-                                    className="data-[state=active]:bg-teal-500 data-[state=active]:text-white"
+                                    className="data-[state=active]:bg-primary data-[state=active]:text-white"
                                 >
                                     Quality Assurance
                                 </TabsTrigger>
@@ -215,11 +215,11 @@ export default function ServicesPage() {
                         <TabsContent value="quality" className="mt-6">
                             <div className="grid md:grid-cols-2 gap-8">
                                 {qualityAssurance.map((qa, index) => (
-                                    <Card key={index} className="bg-gradient-to-br from-card to-background border-teal-200/50">
+                                    <Card key={index} className="bg-gradient-to-br from-card to-background border-primary-200/50">
                                         <CardHeader>
                                             <div className="flex items-center gap-3">
-                                                <div className="p-2 bg-teal-100 rounded-lg">
-                                                    <Shield className="h-6 w-6 text-teal-600" />
+                                                <div className="p-2 bg-primary/10 rounded-lg">
+                                                    <Shield className="h-6 w-6 text-primary" />
                                                 </div>
                                                 <CardTitle className="text-lg">{qa.area}</CardTitle>
                                             </div>
@@ -227,8 +227,8 @@ export default function ServicesPage() {
                                         <CardContent>
                                             <p className="text-muted-foreground mb-4">{qa.description}</p>
                                             <div className="flex items-center justify-between text-sm">
-                                                <span className="text-teal-600 font-medium">{qa.equipment}</span>
-                                                <Badge variant="outline" className="bg-teal-50 text-teal-700">
+                                                <span className="text-primary font-medium">{qa.equipment}</span>
+                                                <Badge variant="outline" className="bg-primary/10 text-primary">
                                                     Certified
                                                 </Badge>
                                             </div>

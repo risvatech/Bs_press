@@ -21,9 +21,9 @@ const Navbar = () => {
     ];
 
     const contactInfo = {
-        phone: "+91 7598062530",
+        phone: "+91 70103 92770",
         email: "bspressproductshosur@gmail.com",
-        whatsapp: "+91 7598062530"
+        whatsapp: "+91 70103 92770"
     };
 
     useEffect(() => setIsClient(true), []);
